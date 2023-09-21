@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'Generic Mobile System Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Generic Mobile System Regular'), url('GenericMobileSystem.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Generic Mobile System Nuevo Regular'), url('GenericMobileSystemNuevo.woff') format('woff');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Generic Mobile System Regular';
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+.yanazyukleme{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(3, 3, 3);
+    position: fixed;
+    text-align: center;
+    transition: visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.senk{
+    position: absolute;
+    font-size: 5vh;
+    color: lime;
+    text-shadow: 0vh 0vh 10vh lime;
+    transition: visibility 0.3s linear,opacity 0.3s linear;
+    visibility: hidden;
+    opacity: 0%;
+    text-align: center;
+    width: 100%;
+    margin-top: 40vh;
+}
+
+#imzam{
+    margin-top: 50vh;
+    color: red;
+    text-shadow: 0vh 0vh 10vh red;
+    font-size: 3vh;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 20%;
+}
+
+.baslik{
+    color: lime;
+    font-size: 5vh;
+    text-shadow: 0vh 0vh 5vh rgba(0, 255, 0, 0.507);
+}
+
+.baslikaciklama{
+    font-size: 3vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    line-height: 4vh;
+}
+
+.yanaz-form{
+    width: 55vh;
+    height: auto;
+    padding: 3vh;
+    background-color: rgba(14, 14, 14, 0.712);
+    box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.377);
+    border-radius: 5vh;
+    border: 0.3vh solid lime;
+    margin: 0 auto;
+}
+
+.hizmetbaslik{
+    font-size: 4vh;
+    margin-top: 0vh;
+}
+
+.hizmetaciklama{
+    color: red;
+    font-size: 2vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+option{
+    background-color: rgb(14, 14, 14);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 1.8vh;
+    width: auto;
+    transition: ease .4s;
+}
+
+select{
+    background-color: rgb(14, 14, 14);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 1.8vh;
+    width: auto;
+    transition: ease .4s;
+    border: 0.3vh solid white;
+    padding: 1vh;
+    border-radius: 1vh;
+    outline: none;
+}
+
+.yanaz-form input{
+    width: 63%;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    background-color: rgba(14, 14, 14, 0.712);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 2vh;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+}
+
+.yanaz-form textarea{
+    width: 63%;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    background-color: rgba(14, 14, 14, 0.712);
+    color: white;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 2vh;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    height: 10vh;
+}
+
+::placeholder{
+    color: lime;
+}
+
+.imza{
+    color: white;
+    font-size: 2vh;
+}
+
+span{
+    color: red;
+}
+
+.imzainsta{
+    color: white;
+    font-size: 2vh;
+    padding: 1vh;
+    background: none;
+    border: 0.3vh solid red;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    cursor: pointer;
+    border-radius: 1vh;
+}
+
+.yanazgonder{
+    width: 67%;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    background-color: rgba(14, 14, 14, 0.712);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 2vh;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: ease .4s;
+}
+
+.yanazgonder:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0vh 0vh 5vh rgba(0, 255, 0, 0.473);
+    border-color: black;
+}
+
+.logformyanaz{
+    width: 40vh;
+    height: auto;
+    background-color: rgba(14, 14, 14, 0.712);
+    padding: 3vh;
+    border: 0.3vh solid lime;
+    box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.507);
+    margin: 0 auto;
+    border-radius: 2vh;
+    margin-top: 30vh;
+}
+
+.logbaslik{
+    margin-top: 0vh;
+    font-size: 3vh;
+}
+
+.logaciklama{
+    font-size: 2vh;
+    color: cyan;
+}
+
+.logformyanaz input{
+    width: 63%;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    background-color: rgba(14, 14, 14, 0.712);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 2vh;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+}
+
+.logformyanaz button{
+    width: 67%;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    background-color: rgba(14, 14, 14, 0.712);
+    color: lime;
+    font-family: 'Generic Mobile System Nuevo Regular';
+    font-size: 2vh;
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: ease .4s;
+}
+
+.basarili{
+    width: 40vh;
+    height: auto;
+    padding: 3vh;
+    background-color: rgba(14, 14, 14, 0.712);
+    border: 0.3vh solid lime;
+    box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.377);
+    margin: 0 auto;
+    border-radius: 0.5vh;
+    margin-top: 30vh;
+}
+
+
+.onayli{
+    color: lime;
+    font-size: 9vh;
+    margin: 0vh;
+}
+
+.basarilibaslik{
+    font-size: 4vh;
+}
+
+.tamam{
+    font-size: 1.7vh;
+    color: cyan;
+}
+
+
+@media only screen and (max-width: 1024px){
+    @font-face {
+        font-family: 'Generic Mobile System Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Generic Mobile System Regular'), url('GenericMobileSystem.woff') format('woff');
+    }
+        
+    
+    @font-face {
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Generic Mobile System Nuevo Regular'), url('GenericMobileSystemNuevo.woff') format('woff');
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        font-family: 'Generic Mobile System Regular';
+        text-align: center;
+        color: white;
+        user-select: none;
+    }
+    
+    #myVideo {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 20%;
+    }
+    
+    .baslik{
+        color: lime;
+        font-size: 5vh;
+        text-shadow: 0vh 0vh 5vh rgba(0, 255, 0, 0.507);
+    }
+    
+    .baslikaciklama{
+        font-size: 3vh;
+        padding-right: 3vh;
+        padding-left: 3vh;
+        line-height: 4vh;
+    }
+    
+    .yanaz-form{
+        width: 30vh;
+        height: auto;
+        padding: 3vh;
+        background-color: rgba(14, 14, 14, 0.712);
+        box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.377);
+        border-radius: 5vh;
+        border: 0.3vh solid lime;
+        margin: 0 auto;
+        margin-bottom: 15vh;
+    }
+    
+    .hizmetbaslik{
+        font-size: 4vh;
+        margin-top: 0vh;
+    }
+    
+    .hizmetaciklama{
+        color: red;
+        font-size: 2vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+    
+    option{
+        background-color: rgb(14, 14, 14);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 1.8vh;
+        width: auto;
+        transition: ease .4s;
+    }
+    
+    select{
+        background-color: rgb(14, 14, 14);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 1.8vh;
+        width: auto;
+        transition: ease .4s;
+        border: 0.3vh solid white;
+        padding: 1vh;
+        border-radius: 1vh;
+        outline: none;
+        width: 30vh;
+    }
+    
+    .yanaz-form input{
+        width: 27.5vh;
+        margin: 0vh;
+        margin-top: 2vh;
+        padding: 1vh;
+        outline: none;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 2vh;
+        border: 0.3vh solid white;
+        border-radius: 1vh;
+    }
+    
+    .yanaz-form textarea{
+        width: 27.5vh;
+        margin: 0vh;
+        margin-top: 2vh;
+        padding: 1vh;
+        outline: none;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: white;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 2vh;
+        border: 0.3vh solid white;
+        border-radius: 1vh;
+        height: 10vh;
+        margin-bottom: 2vh;
+    }
+    
+    ::placeholder{
+        color: lime;
+    }
+    
+    .imza{
+        color: white;
+        font-size: 2vh;
+    }
+    
+    span{
+        color: red;
+    }
+    
+    .imzainsta{
+        color: white;
+        font-size: 2vh;
+        padding: 1vh;
+        background: none;
+        border: 0.3vh solid red;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        cursor: pointer;
+        border-radius: 1vh;
+    }
+    
+    .yanazgonder{
+        width: 30vh;
+        margin-top: 0vh;
+        margin: 0vh;
+        padding: 1vh;
+        outline: none;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 2vh;
+        border: 0.3vh solid white;
+        border-radius: 1vh;
+        cursor: pointer;
+        transition: ease .4s;
+    }
+    
+    .yanazgonder:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 0vh 0vh 5vh rgba(0, 255, 0, 0.473);
+        border-color: black;
+    }
+    
+    .logformyanaz{
+        width: 30vh;
+        height: auto;
+        background-color: rgba(14, 14, 14, 0.712);
+        padding: 3vh;
+        border: 0.3vh solid lime;
+        box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.507);
+        margin: 0 auto;
+        border-radius: 2vh;
+        margin-top: 30vh;
+    }
+    
+    .logbaslik{
+        margin-top: 0vh;
+        font-size: 3vh;
+    }
+    
+    .logaciklama{
+        font-size: 2vh;
+        color: cyan;
+        margin-top: 3vh;
+    }
+    
+    .logformyanaz input{
+        width: 25vh;
+        margin: 0vh;
+        margin-top: 1vh;
+        padding: 1vh;
+        outline: none;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 2vh;
+        border: 0.3vh solid white;
+        border-radius: 1vh;
+        margin-bottom: 1vh;
+    }
+    
+    .logformyanaz button{
+        width: 25vh;
+        margin: 1vh;
+        padding: 1vh;
+        outline: none;
+        background-color: rgba(14, 14, 14, 0.712);
+        color: lime;
+        font-family: 'Generic Mobile System Nuevo Regular';
+        font-size: 2vh;
+        border: 0.3vh solid white;
+        border-radius: 1vh;
+        cursor: pointer;
+        transition: ease .4s;
+    }
+
+    .basarili{
+        width: 30vh;
+        height: auto;
+        padding: 3vh;
+        background-color: rgba(14, 14, 14, 0.712);
+        border: 0.3vh solid lime;
+        box-shadow: 0vh 0vh 10vh rgba(0, 255, 0, 0.377);
+        margin: 0 auto;
+        border-radius: 0.5vh;
+        margin-top: 30vh;
+    }
+
+    .senk{
+        position: absolute;
+        font-size: 5vh;
+        color: lime;
+        text-shadow: 0vh 0vh 10vh lime;
+        transition: visibility 0.3s linear,opacity 0.3s linear;
+        visibility: hidden;
+        opacity: 0%;
+        text-align: center;
+        width: 100%;
+        margin-top: 40vh;
+        font-size: 4vh;
+    }
+    
+    #imzam{
+        margin-top: 48vh;
+        color: red;
+        text-shadow: 0vh 0vh 10vh red;
+        font-size: 2.5vh;
+    }
+    
+
+}

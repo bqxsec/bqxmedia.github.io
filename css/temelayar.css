@@ -1,0 +1,256 @@
+.wobbling-4 {
+    width:3vh;
+    height:3vh;
+    background: rgb(255, 47, 47);
+    box-shadow:0 0 60px 15px rgb(255, 47, 47);
+    transform: translate(-80px);
+    clip-path:inset(0);
+    animation:
+      w4-1 0.5s ease-in-out infinite alternate,
+      w4-2 1s   ease-in-out infinite;
+      margin: 0 auto;
+      margin-top: 22%;
+  }
+  
+  @keyframes w4-1 {
+    100% {transform:translateX(80px)}
+  }
+  
+  @keyframes w4-2 {
+     33% {clip-path:inset(0 0 0 -100px)}
+     50% {clip-path:inset(0 0 0 0)     }
+     83% {clip-path:inset(0 -100px 0 0)}
+  }
+
+.yukleniyor{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    text-align: center;
+    transition: ease .4s;
+    z-index: 50;
+}
+
+body{
+  background-color: rgb(15, 15, 15);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+  cursor: default !important;
+}
+
+a, button, input, textarea, p, h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.pusula{
+  font-size: 5vh;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 1;
+  margin: 4vh;
+  transition: ease .4s;
+  cursor: pointer;
+  text-shadow: 0vh 0vh 10vh white;
+  position: fixed;
+  margin-left: 4vh;
+}
+
+.pusula:hover{
+  color: rgb(255, 47, 47);
+  text-shadow: 0vh 0vh 2vh rgb(255, 47, 47);
+  transform: rotate(360deg);
+}
+
+nav{
+  width: 25vh;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+  position: fixed;
+  border-right: 0.3vh solid rgb(255, 47, 47);
+  text-align: center;
+  overflow: auto;
+  transition: ease .4s;
+  margin-left: -100vh;
+  z-index: 2;
+}
+
+nav img{
+  width: 18vh;
+  margin-top: 3vh;
+  padding-bottom: 2vh;
+  padding-top: 4vh;
+}
+
+nav button{
+  width: 18vh;
+  height: 5vh;
+  background: none;
+  outline: none;
+  border: 0.3vh solid rgb(255, 47, 47);
+  color: white;
+  font-size: 1.7vh;
+  transition: ease .4s;
+  margin-top: 2.5vh;
+}
+
+nav button:hover{
+  width: 20vh;
+  background-color: rgb(255, 47, 47);
+  box-shadow: 0vh 0vh 2vh rgb(255, 47, 47);
+  border-radius: 4vh;
+}
+
+#projelerim-buton{
+  border: none;
+  text-align: left;
+}
+
+#projelerim-buton:hover{
+  width: 18vh;
+  background: none;
+  box-shadow: none;
+  border-radius: 4vh;
+}
+
+.kapat{
+  
+  left: 83%;
+  color: white;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: ease .4s;
+}
+
+.kapat:hover{
+  color: rgb(255, 47, 47);
+}
+
+.kayit-ol-div{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.863);
+  z-index: 5;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.kayit-ol-div p{
+  color: white;
+  margin-top: 20%;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.kayit-ol-div button{
+  width: auto;
+  height: 6vh;
+  font-size: 1.7vh;
+  padding: 1.5vh;
+  margin: 1vh;
+  margin-top: -0.7vh;
+  background: rgb(15, 15, 15);
+  border: 0.3vh solid rgb(255, 47, 47);
+  color: white;
+  border-radius: 1vh;
+  transition: ease .4s;
+}
+
+.kayit-ol-div button:hover{
+  background: black;
+  color: rgb(255, 47, 47);
+  box-shadow: 0vh 0vh 10vh rgba(255, 47, 47, 0.493);
+  border-radius: 5vh;
+}
+
+.imza{
+    color: white;
+    font-size: 1.7vh;
+  }
+  
+  .imza-div{
+    width: 100%;
+    height: auto;
+    background-color: ;
+    text-align: center;
+    top: 90%;
+    z-index: 1;
+  }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1vh;
+  border-radius: 50vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 50vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 47, 47);
+  border-radius: 50vh;
+}
+
+/* RESPONSİVE */
+
+@media only screen and (max-width: 768px) {
+
+  .wobbling-4 {
+    width:3vh;
+    height:3vh;
+    background: rgb(255, 47, 47);
+    box-shadow:0 0 60px 15px rgb(255, 47, 47);
+    transform: translate(-80px);
+    clip-path:inset(0);
+    animation:
+      w4-1 0.5s ease-in-out infinite alternate,
+      w4-2 1s   ease-in-out infinite;
+      margin: 0 auto;
+      margin-top: 50vh;
+  }
+
+  .kayit-ol-div{
+    z-index: 12;
+  }
+  
+  .kayit-ol-div p{
+    color: white;
+    margin-top: 80%;
+    font-size: 2.5vh;
+    font-weight: bold;
+  }
+
+  nav{
+    z-index: 10;
+  }
+
+  .pusula{
+    z-index: 10;
+  }
+
+  .imza-div{
+    z-index: 11;
+    background-color: rgb(15, 15, 15);
+    top: 95vh;
+    height: 5vh;
+  }
+
+  .imza{
+    font-size: 1.4vh;
+  }
+
+}

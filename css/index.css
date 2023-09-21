@@ -1,0 +1,753 @@
+/* anasayfa */
+
+.anasayfa-div{
+  margin: 0 auto;
+  margin-top: 5%;
+  left: 16%;
+  width: 65%;
+  height: 75%;
+  background-color: rgba(12, 12, 12, 0.329);
+  border: 0.3vh solid rgb(255, 47, 47);
+  box-shadow: 0vh 1vh 3vh rgb(255, 47, 47);
+  border-radius: 5vh;
+  text-align: center;
+  z-index: 1;
+  display: block;
+}
+
+.anasayfa-baslik-div{
+  width: 100%;
+  height: 25vh;
+  background-color: ;
+  display: inline-block;
+}
+
+.anasayfa-baslik-div p{
+  color: rgba(255, 255, 255, 0.747);
+  margin-top: 7vh;
+  font-size: 2.5vh;
+}
+
+.anasayfa-baslik-div h1{
+  color: rgb(255, 47, 47);
+  font-weight: 500;
+  font-size: 4vh;
+  letter-spacing: 1.5vh;
+  margin-top: 1vh;
+  transition: ease .4s;
+}
+
+.anasayfa-baslik-div h1:hover{
+  text-shadow: 0vh 0vh 8vh rgb(255, 47, 47);
+}
+
+.anasayfa-baslik-div h1 span{
+  color: white;
+  font-weight: 900;
+}
+
+#container {
+	text-align: left;
+	display:flex;
+	align-items:center;
+	justify-content:left;
+  margin-top: -2vh;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: center;
+	color:rgb(255, 47, 47);
+	letter-spacing: 2px;
+	font-size:3vh;
+	font-weight:600;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 33px;
+	background-color: #fff;
+	animation: blink .45s step-end infinite;
+}
+
+@keyframes blink {
+	from, to {background-color: transparent;}
+	50% {background-color: #fff;}
+}
+
+.anasayfa-baslik-sol-div{
+  width: 40%;
+  height: 100%;
+  background-color: ;
+  float: left;
+  text-align: right;
+}
+
+.anasayfa-baslik-sol-div img{
+  width: 20vh;
+  margin-top: 4vh;
+  border-radius: 100vh;
+  border: 0.4vh solid rgb(255, 47, 47);
+  transition: ease .4s;
+}
+
+.anasayfa-baslik-sol-div img:hover{
+  box-shadow: 0vh 0vh 2vh rgb(255, 47, 47);
+  transform: scale(1.1, 1.1);
+}
+
+.anasayfa-baslik-sag-div{
+  width: 55%;
+  height: 100%;
+  background-color: ;
+  float: right;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.right {
+  text-align: right;
+  width: 100%;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  margin-top: 7vh;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  color: rgb(214, 214, 214);
+  font-size: 2.5vh;
+
+  animation: 1 backwards 
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+.anasayfa-orta-div{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  margin-top: 5vh;
+}
+
+.anasayfa-orta-div h1{
+  font-size: 2.5vh;
+  color: white;
+  text-align: left;
+  padding-left: 3vh;
+}
+
+.anasayfa-orta-div h4{
+  font-size: 1.7vh;
+  color: rgb(255, 47, 47);
+  margin-top: -1vh;
+  text-align: left;
+  padding-left: 3vh;
+}
+
+.anasayfa-orta-div p{
+  color: white;
+  padding-left: 3vh;
+  padding-right: 10vh;
+  font-size: 1.8vh;
+  text-align: left;
+  line-height: 3vh;
+}
+
+.portfolyo-div{
+  margin: 0 auto;
+  margin-top: 5%;
+  left: 16%;
+  width: 65%;
+  height: 75%;
+  background-color: rgb(15, 15, 15);
+  border: 0.3vh solid rgb(255, 47, 47);
+  box-shadow: 0vh 1vh 3vh rgb(255, 47, 47);
+
+  border-radius: 5vh;
+  text-align: center;
+  overflow: auto;
+  z-index: 2;
+  display: none;
+}
+
+h1{
+  color: white;
+  font-size: 3vh;
+  margin-top: 5vh;
+}
+
+.wrapper{
+  width: 75%;
+  background-color: ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -5vh;
+}
+
+.wrap-2{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  display: inline-block;
+  text-align: left;
+}
+
+#portfolyo-baslik{
+  font-style: italic;
+  margin-bottom: 1vh;
+  font-weight: 500;
+  background-color: ;
+  z-index: 2;
+}
+
+.wrapper .card{
+  background: #1a1a1a;
+     width: calc(25% - 8px);
+  height: 30vh;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: ease .4s;
+}
+
+.wrapper .card:hover{
+  border-radius: 40px;
+}
+
+.wrapper .card .circle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+  box-shadow: 0vh 0vh 10vh rgba(255, 47, 47, 0.459);
+}
+.card .circle .box,
+.card .circle .box span{
+ 
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #2b2b2b;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background: -webkit-linear-gradient(left, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0vh 0vh 0.5vh rgba(255, 255, 255, 0.466);
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+.iletisim-div{
+  margin: 0 auto;
+  margin-top: 9%;
+  left: 16%;
+  width: 65%;
+  height: 60%;
+  background-color: rgb(15, 15, 15);
+  border: 0.3vh solid rgb(255, 47, 47);
+  box-shadow: 0vh 1vh 3vh rgb(255, 47, 47);
+ 
+  border-radius: 5vh;
+  text-align: center;
+  z-index: 3;
+  display: none;
+}
+
+::placeholder{
+  color: white;
+}
+
+.iletisim-sag-div{
+  width: 100%;
+  height: 100%;
+  float: right;
+  background-color: ;
+}
+
+.iletisim-sag-div button{
+  width: 25%;
+  height: 7vh;
+  font-size: 2vh;
+  background: rgb(15, 15, 15);
+  color: white;
+  border: 0.2vh solid rgb(255, 47, 47);
+  transition: ease .4s;
+  text-align: left;
+  border-top-right-radius: 4vh;
+  border-bottom-left-radius: 4vh;
+  border-top-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  margin-top: 1.5vh;
+}
+
+.iletisim-sag-div button:hover{
+  border-color: rgb(255, 255, 255);
+  width: 27%;
+  box-shadow: 0vh 0vh 10vh rgba(255, 47, 47, 0.356);
+  border-top-right-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  border-top-left-radius: 4vh;
+  border-bottom-right-radius: 4vh;
+}
+
+.iletisim-sag-div button i{
+  font-size: 3.5vh;
+  margin-left: 2vh;
+ 
+  color: rgb(255, 47, 47);
+}
+
+.ortaklik-div{
+  margin: 0 auto;
+  margin-top: 9%;
+  left: 16%;
+  width: 65%;
+  height: 60%;
+  background-color: rgb(15, 15, 15);
+  border: 0.3vh solid rgb(255, 47, 47);
+  box-shadow: 0vh 1vh 3vh rgb(255, 47, 47);
+ 
+  border-radius: 5vh;
+  text-align: center;
+  z-index: 4;
+  display: none;
+  overflow: auto;
+}
+
+.ortaklik-top-div{
+  width: 95%;
+  height: auto;
+  background-color: ;
+  display: inline-block;
+  text-align: left;
+  padding-left: 5%;
+  color: white;
+}
+
+.ortaklik-top-div p{
+  font-size: 2.2vh;
+  color: rgb(211, 211, 211);
+  font-style: italic;
+  margin-top: -1vh;
+}
+
+.ortaklik-div img{
+  width: 15vh;
+  border-radius: 1vh;
+  margin: 2vh;
+  transition: ease .4s;
+}
+
+.ortaklik-div img:hover{
+  transform: scale(1.4, 1.4);
+  box-shadow: 0vh 0vh 10vh rgba(255, 255, 255, 0.527);
+}
+
+@media only screen and (max-width: 768px) {
+
+.anasayfa-div{
+  margin-top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  border-radius: 0vh;
+  box-shadow: none;
+  border: none;
+  padding-bottom: 15vh;
+}
+
+.anasayfa-baslik-div{
+  width: 100%;
+  height: auto;
+  background-color: ;
+}
+
+.anasayfa-baslik-div p{
+  color: rgba(255, 255, 255, 0.747);
+  margin-top: 7vh;
+  font-size: 2.5vh;
+}
+
+.anasayfa-baslik-div h1{
+  color: rgb(255, 47, 47);
+  font-weight: 500;
+  font-size: 4vh;
+  letter-spacing: 1.5vh;
+  margin-top: 1vh;
+  transition: ease .4s;
+}
+
+.anasayfa-baslik-div h1:hover{
+  text-shadow: 0vh 0vh 8vh rgb(255, 47, 47);
+}
+
+.anasayfa-baslik-div h1 span{
+  color: white;
+  font-weight: 900;
+}
+
+#container {
+  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: -2vh;
+}
+
+#text {
+  display: inline-block;
+  vertical-align: center;
+  color:rgb(255, 47, 47);
+  letter-spacing: 2px;
+  font-size:3vh;
+  font-weight:600;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 33px;
+  background-color: #fff;
+  animation: blink .45s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {background-color: transparent;}
+  50% {background-color: #fff;}
+}
+
+.anasayfa-baslik-sol-div{
+  width: 100%;
+  height: 25vh;
+  background-color: ;
+  float: none;
+  text-align: center;
+}
+
+.anasayfa-baslik-sol-div img{
+  width: 20vh;
+  margin-top: 4vh;
+  border-radius: 100vh;
+  border: 0.4vh solid rgb(255, 47, 47);
+  transition: ease .4s;
+}
+
+.anasayfa-baslik-sol-div img:hover{
+  box-shadow: 0vh 0vh 2vh rgb(255, 47, 47);
+  transform: scale(1.1, 1.1);
+}
+
+.anasayfa-baslik-sag-div{
+  width: 100%;
+  height: 25vh;
+  background-color: ;
+  float: none;
+  text-align: center;
+  padding-left: 0%;
+}
+
+.anasayfa-baslik-sag-div h1{
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+.right {
+  text-align: right;
+  width: 100%;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  margin-top: 2vh;
+}
+
+.anasayfa-orta-div{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  display: inline-block;
+  margin-top: 0vh;
+}
+
+.anasayfa-orta-div h1{
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+  padding-left: 0vh;
+}
+
+.anasayfa-orta-div h4{
+  font-size: 1.9vh;
+  color: rgb(255, 47, 47);
+  margin-top: -1vh;
+  text-align: center;
+  padding-left: 0vh;
+}
+
+.anasayfa-orta-div p{
+  color: white;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  font-size: 1.7vh;
+  text-align: center;
+  line-height: 3vh;
+}
+
+.portfolyo-div{
+  margin: 0 auto;
+  margin-top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  border-radius: 0vh;
+  padding-bottom: 15vh;
+  background-color: rgb(15, 15, 15);
+ 
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+  display: none;
+  padding-top: 10vh;
+}
+
+h1{
+  color: white;
+  font-size: 3vh;
+  margin-top: 5vh;
+}
+
+.wrapper{
+  width: 75%;
+  background-color: ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -2vh;
+}
+
+.wrap-2{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  display: inline-block;
+  text-align: left;
+}
+
+#portfolyo-baslik{
+  font-style: italic;
+  margin-bottom: 1vh;
+  font-weight: 500;
+  background-color: ;
+  z-index: 2;
+}
+
+.iletisim-div{
+  padding-top: 10vh;
+  margin: 0 auto;
+  margin-top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  border-radius: 0vh;
+  padding-bottom: 15vh;
+  background-color: rgb(15, 15, 15);
+ 
+  text-align: center;
+  z-index: 3;
+  display: none;
+}
+
+::placeholder{
+  color: white;
+}
+
+.iletisim-sag-div{
+  width: 100%;
+  height: 100%;
+  float: none;
+  background-color: ;
+}
+
+.iletisim-sag-div button{
+  width: 60%;
+  height: 7vh;
+  font-size: 2vh;
+  background: rgb(15, 15, 15);
+  color: white;
+  border: 0.2vh solid rgb(255, 47, 47);
+  transition: ease .4s;
+  text-align: left;
+  border-top-right-radius: 4vh;
+  border-bottom-left-radius: 4vh;
+  border-top-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  margin-top: 1.5vh;
+}
+
+.iletisim-sag-div button:hover{
+  border-color: rgb(255, 255, 255);
+  width: 65%;
+  box-shadow: 0vh 0vh 10vh rgba(255, 47, 47, 0.356);
+  border-top-right-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  border-top-left-radius: 4vh;
+  border-bottom-right-radius: 4vh;
+}
+
+.iletisim-sag-div button i{
+  font-size: 3.5vh;
+  margin-left: 2vh;
+ 
+  color: rgb(255, 47, 47);
+}
+
+.ortaklik-div{
+  padding-top: 10vh;
+  margin: 0 auto;
+  margin-top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 0vh;
+  background-color: rgb(15, 15, 15);
+ 
+  padding-bottom: 15vh;
+  text-align: center;
+  z-index: 4;
+  display: none;
+}
+
+.ortaklik-top-div{
+  width: 100%;
+  height: auto;
+  background-color: ;
+  display: inline-block;
+  text-align: left;
+  padding-left: 0%;
+  color: white;
+  text-align: center;
+}
+
+.ortaklik-top-div h1{
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+.ortaklik-top-div p{
+  font-size: 2.2vh;
+  color: rgb(255, 47, 47);
+  font-style: italic;
+  margin-top: -1vh;
+}
+
+.ortaklik-div img{
+  width: 15vh;
+  border-radius: 1vh;
+  margin: 2vh;
+  transition: ease .4s;
+  display: inline-table;
+}
+
+.ortaklik-div img:hover{
+  transform: scale(1.4, 1.4);
+  box-shadow: 0vh 0vh 10vh rgba(255, 255, 255, 0.527);
+}
+
+}
